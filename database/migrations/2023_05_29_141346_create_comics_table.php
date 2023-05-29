@@ -13,9 +13,18 @@ return new class extends Migration
      */
     public function up()
     {
+       
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('title', 60);
+            $table->text('description');
+            $table->text('thumb');
+            $table->float('price', 4, 2, true);
+            $table->string('series', 60);
+            $table->date('sale_date');
+            $table->string('artists');
+            $table->string('writers');
         });
     }
 
