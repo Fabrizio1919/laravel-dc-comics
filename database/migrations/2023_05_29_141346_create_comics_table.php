@@ -20,11 +20,9 @@ return new class extends Migration
             $table->string('title', 60);
             $table->text('description');
             $table->text('thumb');
-            $table->float('price', 4, 2, true);
+            $table->string('price', 10);
             $table->string('series', 60);
             $table->date('sale_date');
-            $table->string('artists');
-            $table->string('writers');
         });
     }
 
