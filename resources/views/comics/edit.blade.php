@@ -47,16 +47,6 @@
             </div>
 
             <div class="mb-3">
-                <label for="artists" class="form-label">Artists</label>
-                <input type="text" class="form-control" id="artists" name="artists" value="{{ $comic->artists }}">
-            </div>
-
-            <div class="mb-3">
-                <label for="writers" class="form-label">Writers</label>
-                <input type="text" class="form-control" id="writers" name="writers" value="{{ $comic->writers }}">
-            </div>
-
-            <div class="mb-3">
                 <label for="sale_date">Sale date:</label>
                 <input type="date" id="sale_date" name="sale_date" value="{{ $comic->sale_date }}">
 

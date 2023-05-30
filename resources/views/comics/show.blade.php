@@ -13,10 +13,6 @@
         <div class="col">
             <h3>Description</h3>
             <p>{{ $comic->description }}</p>
-            <h3>Writers</h3>
-            <p>{{ $comic->writers }}</p>
-            <h3>Artist</h3>
-            <p>{{ $comic->artists }}</p>
         </div>
     </div>
     <div class="row">
