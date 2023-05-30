@@ -11,7 +11,7 @@
 
 <body>
     <header>
-      
+        @include('components.navbar')
     </header>
     <main class="container my-4">
         @yield('page.main')

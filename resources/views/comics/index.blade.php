@@ -32,11 +32,11 @@
                     <td class=" align-middle">{{ $comic->price }}$</td>
                     <td class=" align-middle">{{ $comic->series }}</td>
                     <td class=" align-middle">
-                        
+                    @include('components.editZone')
                     </td>
                     <td class=" align-middle">
                         <a href="{{ route('comics.show', $comic->id) }}">
-                        
+                        @include('components.svg.show')
                         </a>
                     </td>
                 </tr>
