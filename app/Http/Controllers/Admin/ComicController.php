@@ -92,6 +92,8 @@ class ComicController extends Controller
             'series' => 'nullable',
         ]);
 
+        $comic->update($val_data);
+
       
 
         return to_route('comics.show', $comic->id);
