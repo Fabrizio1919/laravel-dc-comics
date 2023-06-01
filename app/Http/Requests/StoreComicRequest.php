@@ -29,7 +29,6 @@ class StoreComicRequest extends FormRequest
             'thumb' => 'nullable|max:255',
             'price' => 'nullable',
             'series' => 'nullable',
-            'description' => 'nullable'
         ];
     }
 }
