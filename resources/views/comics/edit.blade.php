@@ -1,5 +1,4 @@
 @extends('layout.app')
-
 @section('page.title')
 <div class="container">
     <div class="d-flex justify-content-between">
@@ -14,28 +13,28 @@
 </div>
 @endsection
 
+
 @section('page.main')
 <div class="container p-2 position-relative">
-    @include('partial.error')
+    @include('partials.error')
     <form action="{{ route('comics.update', $comic->id) }}" method="POST">
         @csrf
         @method('PUT')
 
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" @error('title') is-invalid @enderror id="title" name="title" value="{{old('title', $comic->title)}">
+            <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title" value="{{old('title', $comic->title)}}">
             @error('title')
             <div class="alert alert-danger" role="alert">
                 <strong>Error: Title</strong>
             </div>
             @enderror
-            </div>
+        </div>
 
-            <div class="mb-3">
-                <label for="description" class="form-label">Description</label>
-                <input type="text" class="form-control" @error('description') is-invalid @enderror id="description" name="description"
-                    value="{{old('description', $comic->description)}">
-                    @error('description')
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input type="text" class="form-control @error('description') is-invalid @enderror" id="description" name="description" value="{{old('description', $comic->description)}}">
+            @error('description')
             <div class="alert alert-danger" role="alert">
                 <strong>Error: Description</strong>
             </div>
@@ -44,12 +43,12 @@
 
         <div class="mb-3">
             <label for="thumb" class="form-label">Image link</label>
-            <input type="text" class="form-control" @error('thumb') is-invalid @enderror id="thumb" name="thumb" value="{{old('thumb', $comic->thumb)}">
+            <input type="text" class="form-control @error('thumb') is-invalid @enderror" id="thumb" name="thumb" value="{{old('thumb', $comic->thumb)}}">
         </div>
 
         <div class="mb-3">
             <label for="price" class="form-label">Price</label>
-            <input type="number" class="form-control" @error('price') is-invalid @enderror id="price" name="price" value="{{old('price', $comic->price)}">
+            <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{old('price', $comic->price)}}">
             @error('price')
             <div class="alert alert-danger" role="alert">
                 <strong>Error: Price</strong>
@@ -59,7 +58,7 @@
 
         <div class="mb-3">
             <label for="series" class="form-label">Series</label>
-            <input type="text" class="form-control" @error('series') is-invalid @enderror id="series" name="series" value="{{old('series', $comic->series)}">
+            <input type="text" class="form-control @error('series') is-invalid @enderror" id="series" name="series" value="{{old('series', $comic->series)}}">
             @error('series')
             <div class="alert alert-danger" role="alert">
                 <strong>Error: Series</strong>
