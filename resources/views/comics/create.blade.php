@@ -16,27 +16,27 @@
 
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title">
+                <input type="text" class="form-control" id="title" name="title" value="{{old('title')}">
             </div>
 
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <input type="text" class="form-control" id="description" name="description">
+                <input type="text" class="form-control" id="description" name="description" value="{{old('descriprion')}">
             </div>
 
             <div class="mb-3">
                 <label for="thumb" class="form-label">Image link</label>
-                <input type="text" class="form-control" id="thumb" name="thumb">
+                <input type="text" class="form-control" id="thumb" name="thumb" value="{{old('thumb')}">
             </div>
 
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
-                <input type="number" class="form-control" id="price" name="price">
+                <input type="number" class="form-control" id="price" name="price" value="{{old('price')}">
             </div>
 
             <div class="mb-3">
                 <label for="series" class="form-label">Series</label>
-                <input type="text" class="form-control" id="series" name="series">
+                <input type="text" class="form-control" id="series" name="series" value="{{old('series')}">
             </div>
 
             <div class="mb-3">
